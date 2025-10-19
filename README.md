@@ -1,19 +1,19 @@
-💻 Java Calculator Setup on Ubuntu
-Step 1: Update Ubuntu Packages
+                💻 Java Calculator Project Setup on Ubuntu
+1️⃣ Update Ubuntu Packages
 
-Always start by updating your system to ensure you have the latest packages.
+Always start by updating your system:
 
 sudo apt update
 sudo apt upgrade -y
 
-Step 2: Install Git
+2️⃣ Install Git
 
-Check if Git is already installed:
+Check if Git is installed:
 
 git --version
 
 
-If not installed, run:
+If not installed:
 
 sudo apt install git -y
 
@@ -22,14 +22,14 @@ Test installation:
 
 git --version
 
-Step 3: Clone Your Java Project
+3️⃣ Clone Your Java Project
 
 Clone your GitHub repository:
 
 git clone https://github.com/yannamsiva/javacalculator.git
 
 
-Navigate to the project directory:
+Navigate to the project folder:
 
 cd javacalculator
 
@@ -38,14 +38,14 @@ List files to confirm:
 
 ls
 
-Step 4: Install Java (OpenJDK 17)
+4️⃣ Install Java (OpenJDK 17)
 
 Check if Java is installed:
 
 java -version
 
 
-If not installed, install Java 17:
+Install Java 17 if needed:
 
 sudo apt install openjdk-17-jdk -y
 
@@ -58,28 +58,25 @@ javac -version
 
 ✅ You should see openjdk version "17" and javac 17.
 
-Step 5: Install Maven
+5️⃣ Install Maven
 
 Check if Maven is installed:
 
 mvn -v
 
 
-If not installed, run:
+If not installed:
 
 sudo apt install maven -y
 
 
-Test Maven installation:
+Verify installation:
 
 mvn -v
 
+6️⃣ Verify Project Structure
 
-You should see Maven version information.
-
-Step 6: Verify Project Structure
-
-Ensure your Maven project structure is correct:
+Ensure your Maven project has this structure:
 
 javacalculator/
 ├── pom.xml
@@ -90,16 +87,14 @@ javacalculator/
                 └── shiva/
                     └── ConsoleCalculator.java
 
-Step 7: Build the Project
+7️⃣ 🚀 Maven Build the Project
 
-Clean any previous builds and package your project:
+Clean previous builds and package your project:
 
 mvn clean package
 
 
-If successful, Maven will create a .jar file in the target/ folder.
-
-Check the .jar file:
+Check the generated .jar file in target/:
 
 ls target/
 
@@ -108,9 +103,9 @@ You should see:
 
 javacalculator-0.0.1-SNAPSHOT.jar
 
-Step 8: Run the Java Application
+8️⃣ Run the Java Application
 
-Navigate to the target folder:
+Go to the target folder:
 
 cd target
 
@@ -120,12 +115,16 @@ Run the .jar file:
 java -jar javacalculator-0.0.1-SNAPSHOT.jar
 
 
-✅ If it’s GUI-based, the calculator window should appear.
-✅ If it’s console-based, outputs will appear in your terminal.
+✅ GUI-based: Calculator window appears.
+✅ Console-based: Output appears in the terminal.
 
-Step 9 (Optional): Install tree Command
+9️⃣ (Optional) Install tree for Project Visualization
 
-To easily visualize your project structure:
+Install tree:
 
 sudo apt install tree -y
+
+
+View project structure:
+
 tree src/
