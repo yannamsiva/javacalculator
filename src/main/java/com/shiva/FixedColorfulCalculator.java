@@ -2,7 +2,7 @@ package com.shiva;
 
 import java.util.Scanner;
 
-public class ConsoleCalculator {
+public class FixedColorfulCalculator {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
