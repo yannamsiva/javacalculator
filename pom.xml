@@ -42,7 +42,7 @@
   <configuration>
     <archive>
       <manifest>
-        <mainClass>com.shiva.ConsoleCalculator</mainClass>
+        <mainClass>com.shiva.FixedColorfulCalculator</mainClass>
       </manifest>
     </archive>
   </configuration>
