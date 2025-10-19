@@ -1,18 +1,19 @@
+💻 Java Calculator Setup on Ubuntu
 Step 1: Update Ubuntu Packages
 
-Always start by updating your system:
+Always start by updating your system to ensure you have the latest packages.
 
 sudo apt update
 sudo apt upgrade -y
 
 Step 2: Install Git
 
-Check if Git is installed:
+Check if Git is already installed:
 
 git --version
 
 
-If it’s not installed, run:
+If not installed, run:
 
 sudo apt install git -y
 
@@ -23,12 +24,12 @@ git --version
 
 Step 3: Clone Your Java Project
 
-Clone your GitHub project:
+Clone your GitHub repository:
 
 git clone https://github.com/yannamsiva/javacalculator.git
 
 
-Go into the project directory:
+Navigate to the project directory:
 
 cd javacalculator
 
@@ -44,12 +45,12 @@ Check if Java is installed:
 java -version
 
 
-Install Java 17:
+If not installed, install Java 17:
 
 sudo apt install openjdk-17-jdk -y
 
 
-Check installation:
+Verify installation:
 
 java -version
 javac -version
@@ -74,11 +75,11 @@ Test Maven installation:
 mvn -v
 
 
-You should see Maven version info.
+You should see Maven version information.
 
 Step 6: Verify Project Structure
 
-Make sure your project has this Maven structure:
+Ensure your Maven project structure is correct:
 
 javacalculator/
 ├── pom.xml
@@ -96,20 +97,20 @@ Clean any previous builds and package your project:
 mvn clean package
 
 
-If everything is correct, Maven will create a .jar file in the target/ folder.
+If successful, Maven will create a .jar file in the target/ folder.
 
 Check the .jar file:
 
 ls target/
 
 
-You should see something like:
+You should see:
 
 javacalculator-0.0.1-SNAPSHOT.jar
 
 Step 8: Run the Java Application
 
-Go to the target folder:
+Navigate to the target folder:
 
 cd target
 
@@ -117,3 +118,14 @@ cd target
 Run the .jar file:
 
 java -jar javacalculator-0.0.1-SNAPSHOT.jar
+
+
+✅ If it’s GUI-based, the calculator window should appear.
+✅ If it’s console-based, outputs will appear in your terminal.
+
+Step 9 (Optional): Install tree Command
+
+To easily visualize your project structure:
+
+sudo apt install tree -y
+tree src/
